@@ -22,7 +22,6 @@ public class CommunicationService {
 	    try {
 			_url = new URL(url);
 			_con = (HttpsURLConnection)_url.openConnection();
-			_con.setRequestProperty("Authorization", "token f2e8268ff5850f48b319356abd983db4db461db8");
 			//_con.setRequestProperty("Authorization", "token ADD_YOUR_TOKEN");
 			_inputStream = new BufferedReader(
 		                new InputStreamReader(_con.getInputStream()));
